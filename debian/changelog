@@ -1,0 +1,5 @@
+x11proto-present (1.0-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 24 Nov 2013 14:12:07 +0100

@@ -1,0 +1,29 @@
+Source: x11proto-present
+Section: x11
+Priority: optional
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Build-Depends:
+ debhelper (>= 8),
+ dh-autoreconf,
+ quilt,
+ xutils-dev (>= 1:7.5~1),
+ pkg-config,
+Standards-Version: 3.9.2
+Vcs-Git: git://git.debian.org/git/pkg-xorg/proto/x11proto-present
+Vcs-Browser: http://git.debian.org/?p=pkg-xorg/proto/x11proto-present.git
+
+Package: x11proto-present-dev
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Multi-Arch: foreign
+Description: X11 Present extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the Present extension, which provides a way for applications to update
+ their window contents from a pixmap in a well defined fashion, synchronizing
+ with the display refresh and potentially using a more efficient
+ mechanism than copying the contents of the source pixmap.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org presentproto proto module.
